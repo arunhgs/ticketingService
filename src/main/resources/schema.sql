@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS ticket;
+ 
+CREATE TABLE tickets (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  description VARCHAR(250) NOT NULL
+);
+
+CREATE TABLE tasks (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  ticket_id INT NOT NULL,
+  description VARCHAR(250) NOT NULL
+);
