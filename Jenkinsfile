@@ -5,7 +5,6 @@ pipeline {
 
         stage('Pre Build') {
     try {
-      checkout scm
       echo "Cloning code from git branch ${env.BRANCH_NAME}"
     } catch (exc) {
       echo "unable to pull code from branch ${env.BRANCH_NAME}"
