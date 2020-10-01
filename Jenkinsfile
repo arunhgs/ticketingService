@@ -36,7 +36,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-		java -jar ticketSystem.jar
+		sh 'java -jar ticketSystem.jar'
             }
         }
     }
